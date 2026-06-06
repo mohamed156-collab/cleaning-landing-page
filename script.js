@@ -1,7 +1,6 @@
 const header = document.getElementById('header');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
-const mobileCtaBar = document.getElementById('mobileCtaBar');
 
 const WHATSAPP_NUMBER = '212708053592';
 const WHATSAPP_MESSAGE = `Hello 👋
@@ -18,6 +17,8 @@ const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
 
 document.querySelectorAll('[data-whatsapp]').forEach((link) => {
   link.href = whatsappUrl;
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener noreferrer');
 });
 
 if (header) {
@@ -41,8 +42,7 @@ if (navToggle && navLinks) {
 }
 
 function initMobileCta() {
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
-  document.body.classList.toggle('has-mobile-cta', isMobile);
+  document.body.classList.toggle('has-mobile-cta', window.matchMedia('(max-width: 768px)').matches);
 }
 
 initMobileCta();
