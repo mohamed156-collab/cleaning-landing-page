@@ -7,6 +7,7 @@
   <title>SparkleClean — Professional Cleaning Services in the UAE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -76,16 +77,31 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-card hero-card-main">
-          <div class="hero-card-top">
-            <span class="hero-card-label">Most Booked</span>
-            <span class="hero-card-rating">★ 4.9</span>
+        <div class="hero-image-wrap">
+          <img
+            class="hero-img"
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=720&q=80"
+            srcset="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=480&q=80 480w,
+                    https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=720&q=80 720w,
+                    https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=960&q=80 960w"
+            sizes="(max-width: 768px) 90vw, 420px"
+            width="720"
+            height="540"
+            alt="Professional cleaning team at work in a modern home"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          >
+          <div class="hero-card hero-card-overlay">
+            <div class="hero-card-top">
+              <span class="hero-card-label">Most Booked</span>
+              <span class="hero-card-rating">★ 4.9</span>
+            </div>
+            <h3>Deep Cleaning</h3>
+            <p>Full top-to-bottom clean for villas & apartments</p>
+            <div class="hero-card-price">From <strong>AED 299</strong></div>
+            <a href="https://wa.me/212708053592" data-whatsapp class="btn btn-primary btn-block">Book Now — Free Quote</a>
           </div>
-          <div class="hero-card-icon">✨</div>
-          <h3>Deep Cleaning</h3>
-          <p>Full top-to-bottom clean for villas & apartments</p>
-          <div class="hero-card-price">From <strong>AED 299</strong></div>
-          <a href="https://wa.me/212708053592" data-whatsapp class="btn btn-primary btn-block">Book Now — Free Quote</a>
         </div>
         <div class="hero-trust-pills">
           <span>✓ Licensed Team</span>
@@ -185,7 +201,20 @@
       </div>
       <div class="services-grid">
         <article class="service-card">
-          <div class="service-icon">🏠</div>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=75"
+              srcset="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=400&q=75 400w,
+                      https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=75 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width="600"
+              height="360"
+              alt="Bright, clean modern kitchen in a home"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="service-body">
           <h3>Home & Villa Cleaning</h3>
           <p class="service-desc">Regular maintenance for apartments, villas, and townhouses.</p>
           <ul class="service-features">
@@ -197,10 +226,24 @@
             <span class="service-price">From <strong>AED 149</strong></span>
             <a href="https://wa.me/212708053592" data-whatsapp class="service-link">Get Quote →</a>
           </div>
+          </div>
         </article>
         <article class="service-card featured">
           <div class="service-badge">Best Seller</div>
-          <div class="service-icon">✨</div>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a56?auto=format&fit=crop&w=600&q=75"
+              srcset="https://images.unsplash.com/photo-1628177142898-93e36e4e3a56?auto=format&fit=crop&w=400&q=75 400w,
+                      https://images.unsplash.com/photo-1628177142898-93e36e4e3a56?auto=format&fit=crop&w=600&q=75 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width="600"
+              height="360"
+              alt="Professional deep cleaning supplies and equipment"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="service-body">
           <h3>Deep Cleaning</h3>
           <p class="service-desc">Intensive top-to-bottom clean for a truly fresh start.</p>
           <ul class="service-features">
@@ -212,9 +255,23 @@
             <span class="service-price">From <strong>AED 299</strong></span>
             <a href="https://wa.me/212708053592" data-whatsapp class="service-link">Get Quote →</a>
           </div>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-icon">🏢</div>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=75"
+              srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=75 400w,
+                      https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=75 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width="600"
+              height="360"
+              alt="Clean, modern office workspace"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="service-body">
           <h3>Office Cleaning</h3>
           <p class="service-desc">Professional cleaning for offices, clinics, and retail spaces.</p>
           <ul class="service-features">
@@ -226,9 +283,23 @@
             <span class="service-price">From <strong>AED 399</strong></span>
             <a href="https://wa.me/212708053592" data-whatsapp class="service-link">Get Quote →</a>
           </div>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-icon">📦</div>
+          <div class="service-image">
+            <img
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=75"
+              srcset="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=400&q=75 400w,
+                      https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=75 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width="600"
+              height="360"
+              alt="New apartment ready for move-in cleaning"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="service-body">
           <h3>Move-In / Move-Out</h3>
           <p class="service-desc">Complete cleaning for property handover or new tenants.</p>
           <ul class="service-features">
@@ -239,6 +310,7 @@
           <div class="service-footer">
             <span class="service-price">From <strong>AED 499</strong></span>
             <a href="https://wa.me/212708053592" data-whatsapp class="service-link">Get Quote →</a>
+          </div>
           </div>
         </article>
       </div>
