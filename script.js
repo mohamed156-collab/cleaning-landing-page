@@ -1,6 +1,7 @@
 const header = document.getElementById('header');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+const mobileCtaBar = document.getElementById('mobileCtaBar');
 
 const WHATSAPP_NUMBER = '212708053592';
 const WHATSAPP_MESSAGE = `Hello 👋
@@ -38,3 +39,11 @@ if (navToggle && navLinks) {
     });
   });
 }
+
+function initMobileCta() {
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  document.body.classList.toggle('has-mobile-cta', isMobile);
+}
+
+initMobileCta();
+window.addEventListener('resize', initMobileCta);

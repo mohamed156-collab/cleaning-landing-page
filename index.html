@@ -3,14 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Trusted home and office cleaning services across the UAE. Professional staff, eco-friendly products, and spotless results — book via WhatsApp.">
+  <meta name="description" content="Professional cleaning services across the UAE. Free quote in minutes. Same-day availability. Trusted by 2,000+ homes and offices.">
   <title>SparkleClean — Professional Cleaning Services in the UAE</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+
+  <!-- Urgency Bar -->
+  <div class="urgency-bar">
+    <div class="container urgency-inner">
+      <span class="urgency-dot"></span>
+      <p><strong>Limited slots this week</strong> — Book now and get a <strong>free quote</strong> within 1 hour</p>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <header class="header" id="header">
@@ -25,9 +33,10 @@
         <span></span>
       </button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#why-us">Why Us</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" data-whatsapp class="nav-cta">Get Free Quote</a></li>
       </ul>
     </nav>
   </header>
@@ -37,35 +46,131 @@
     <div class="hero-bg"></div>
     <div class="container hero-content">
       <div class="hero-text">
-        <span class="badge">Trusted by 2,000+ clients across the UAE</span>
-        <h1>A cleaner home,<br>a <span class="highlight">better life</span></h1>
-        <p>Professional villa, apartment, and office cleaning tailored to your schedule. Trained staff, eco-friendly products, and results you can count on.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Book a Cleaning</a>
-          <a href="#services" class="btn btn-outline">View Services</a>
+        <div class="hero-badges">
+          <span class="badge">★ 4.9 Rated in the UAE</span>
+          <span class="badge badge-outline">2,000+ Happy Clients</span>
         </div>
+        <h1>Spotless Cleaning for Your Home & Office — <span class="highlight">Booked in 60 Seconds</span></h1>
+        <p class="hero-sub">Professional villa, apartment, and office cleaning across Dubai, Abu Dhabi, and Sharjah. Trained staff, eco-friendly products, and guaranteed results — every single visit.</p>
+        <div class="hero-actions">
+          <a href="#contact" data-whatsapp class="btn btn-whatsapp btn-lg">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Get Free Quote on WhatsApp
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">See Services & Prices</a>
+        </div>
+        <p class="hero-note">No payment required to get a quote · Response within 1 hour</p>
         <div class="hero-stats">
           <div class="stat">
             <strong>10+</strong>
-            <span>Years of Experience</span>
+            <span>Years Experience</span>
           </div>
           <div class="stat">
             <strong>4.9★</strong>
-            <span>Customer Rating</span>
+            <span>Average Rating</span>
           </div>
           <div class="stat">
-            <strong>100%</strong>
-            <span>Satisfaction Guaranteed</span>
+            <strong>24h</strong>
+            <span>Fast Booking</span>
           </div>
         </div>
       </div>
-      <div class="hero-image">
-        <div class="hero-card">
-          <div class="hero-card-icon">🧹</div>
+      <div class="hero-visual">
+        <div class="hero-card hero-card-main">
+          <div class="hero-card-top">
+            <span class="hero-card-label">Most Booked</span>
+            <span class="hero-card-rating">★ 4.9</span>
+          </div>
+          <div class="hero-card-icon">✨</div>
           <h3>Deep Cleaning</h3>
-          <p>Every corner, every surface — immaculately clean.</p>
-          <span class="hero-card-price">From AED 299</span>
+          <p>Full top-to-bottom clean for villas & apartments</p>
+          <div class="hero-card-price">From <strong>AED 299</strong></div>
+          <a href="#contact" data-whatsapp class="btn btn-primary btn-block">Book Now — Free Quote</a>
         </div>
+        <div class="hero-trust-pills">
+          <span>✓ Licensed Team</span>
+          <span>✓ Insured Service</span>
+          <span>✓ No Hidden Fees</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">🛡️</span>
+        <div>
+          <strong>Fully Insured</strong>
+          <span>Your property protected</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">👥</span>
+        <div>
+          <strong>Trained Staff</strong>
+          <span>Background-checked team</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🌿</span>
+        <div>
+          <strong>Eco-Friendly</strong>
+          <span>Safe for kids & pets</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">💯</span>
+        <div>
+          <strong>Satisfaction Guarantee</strong>
+          <span>Not happy? We re-clean free</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fast Response -->
+  <section class="speed-banner">
+    <div class="container speed-inner">
+      <div class="speed-icon">⚡</div>
+      <div class="speed-text">
+        <h2>Same-Day & Next-Day Service Available</h2>
+        <p>Message us on WhatsApp and get a reply within <strong>1 hour</strong>. Most bookings confirmed within <strong>24 hours</strong>.</p>
+      </div>
+      <a href="#contact" data-whatsapp class="btn btn-white">Get Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why SparkleClean</span>
+        <h2>Why UAE Families & Businesses Choose Us</h2>
+        <p>We are not just cleaners — we are your trusted partner for a healthier, spotless space.</p>
+      </div>
+      <div class="why-grid">
+        <article class="why-card">
+          <div class="why-num">01</div>
+          <h3>Reliable & Punctual</h3>
+          <p>We arrive on time, every time. No no-shows, no excuses — just consistent, dependable service you can count on.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-num">02</div>
+          <h3>Transparent Pricing</h3>
+          <p>Clear quotes upfront with no hidden charges. You know exactly what you pay before we start any job.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-num">03</div>
+          <h3>Flexible Scheduling</h3>
+          <p>Weekly, bi-weekly, one-off, or after-hours office cleans. We work around your lifestyle and business hours.</p>
+        </article>
+        <article class="why-card">
+          <div class="why-num">04</div>
+          <h3>Premium Results</h3>
+          <p>Detailed checklists, quality inspections, and a re-clean guarantee if anything does not meet your standards.</p>
+        </article>
       </div>
     </div>
   </section>
@@ -74,115 +179,161 @@
   <section class="services" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">What We Offer</span>
-        <h2>Our Cleaning Services</h2>
-        <p>Flexible plans for villas, apartments, offices, and commercial spaces across the UAE.</p>
+        <span class="section-tag">Our Services</span>
+        <h2>Simple, Clear Cleaning Packages</h2>
+        <p>Choose the service that fits your needs. All packages include supplies, equipment, and a satisfaction guarantee.</p>
       </div>
       <div class="services-grid">
         <article class="service-card">
           <div class="service-icon">🏠</div>
           <h3>Home & Villa Cleaning</h3>
-          <p>Regular or one-off deep cleans for apartments, villas, and townhouses. Dusting, mopping, bathrooms, and kitchens — all taken care of.</p>
+          <p class="service-desc">Regular maintenance for apartments, villas, and townhouses.</p>
           <ul class="service-features">
-            <li>Weekly & bi-weekly plans</li>
-            <li>Move-in / move-out cleaning</li>
-            <li>Child & pet-safe products</li>
+            <li>Dusting, mopping & vacuuming</li>
+            <li>Kitchen & bathroom deep clean</li>
+            <li>Weekly or bi-weekly plans</li>
           </ul>
+          <div class="service-footer">
+            <span class="service-price">From <strong>AED 149</strong></span>
+            <a href="#contact" data-whatsapp class="service-link">Get Quote →</a>
+          </div>
         </article>
         <article class="service-card featured">
-          <div class="service-badge">Most Popular</div>
-          <div class="service-icon">🏢</div>
-          <h3>Office Cleaning</h3>
-          <p>Keep your workspace spotless and professional. We work after hours or on weekends so your business runs without interruption.</p>
-          <ul class="service-features">
-            <li>Desks & common areas</li>
-            <li>Washroom sanitisation</li>
-            <li>Flexible scheduling</li>
-          </ul>
-        </article>
-        <article class="service-card">
+          <div class="service-badge">Best Seller</div>
           <div class="service-icon">✨</div>
           <h3>Deep Cleaning</h3>
-          <p>A thorough top-to-bottom clean for spaces that need extra attention. Ideal before handover, events, or after renovations.</p>
+          <p class="service-desc">Intensive top-to-bottom clean for a truly fresh start.</p>
           <ul class="service-features">
-            <li>Inside appliances & cupboards</li>
-            <li>Skirting boards & windows</li>
-            <li>Grout & tile scrubbing</li>
+            <li>Inside cupboards & appliances</li>
+            <li>Grout, tiles & skirting boards</li>
+            <li>Ideal before events or handover</li>
           </ul>
+          <div class="service-footer">
+            <span class="service-price">From <strong>AED 299</strong></span>
+            <a href="#contact" data-whatsapp class="service-link">Get Quote →</a>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-icon">🪟</div>
-          <h3>Window Cleaning</h3>
-          <p>Crystal-clear windows inside and out. Streak-free results that brighten your home or office and let the light in.</p>
+          <div class="service-icon">🏢</div>
+          <h3>Office Cleaning</h3>
+          <p class="service-desc">Professional cleaning for offices, clinics, and retail spaces.</p>
           <ul class="service-features">
-            <li>Interior & exterior</li>
-            <li>High-rise & villa windows</li>
-            <li>Screen & frame cleaning</li>
+            <li>Desks, floors & common areas</li>
+            <li>Washroom sanitisation</li>
+            <li>After-hours availability</li>
           </ul>
+          <div class="service-footer">
+            <span class="service-price">From <strong>AED 399</strong></span>
+            <a href="#contact" data-whatsapp class="service-link">Get Quote →</a>
+          </div>
         </article>
         <article class="service-card">
-          <div class="service-icon">🧺</div>
-          <h3>Laundry & Ironing</h3>
-          <p>Save time every week with our laundry service. Wash, fold, and press — delivered back fresh and ready to wear.</p>
+          <div class="service-icon">📦</div>
+          <h3>Move-In / Move-Out</h3>
+          <p class="service-desc">Complete cleaning for property handover or new tenants.</p>
           <ul class="service-features">
-            <li>Wash & fold</li>
-            <li>Delicate fabric care</li>
-            <li>Same-day collection available</li>
+            <li>Full property deep clean</li>
+            <li>Windows, walls & fixtures</li>
+            <li>Landlord-approved standards</li>
           </ul>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">🌿</div>
-          <h3>Eco Cleaning</h3>
-          <p>Green cleaning with non-toxic, biodegradable products. Safe for children, pets, and the environment.</p>
-          <ul class="service-features">
-            <li>Non-toxic formulas</li>
-            <li>Hypoallergenic options</li>
-            <li>No harsh chemicals</li>
-          </ul>
+          <div class="service-footer">
+            <span class="service-price">From <strong>AED 499</strong></span>
+            <a href="#contact" data-whatsapp class="service-link">Get Quote →</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials" id="testimonials">
+  <!-- CTA #2 -->
+  <section class="cta-mid">
+    <div class="container cta-mid-inner">
+      <div>
+        <h2>Not sure which package you need?</h2>
+        <p>Tell us about your space on WhatsApp — we will recommend the right service and send you a free, no-obligation quote today.</p>
+      </div>
+      <a href="#contact" data-whatsapp class="btn btn-whatsapp btn-lg">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Get Your Free Quote Today
+      </a>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Client Stories</span>
-        <h2>What Our Clients Say</h2>
-        <p>Genuine reviews from homeowners and businesses who trust SparkleClean across the region.</p>
+        <span class="section-tag">Customer Reviews</span>
+        <h2>Trusted by Homeowners & Businesses</h2>
+        <p>Real feedback from clients across Dubai, Abu Dhabi, and Sharjah.</p>
       </div>
-      <div class="testimonials-grid">
-        <blockquote class="testimonial-card">
+      <div class="reviews-summary">
+        <div class="reviews-score">
+          <strong>4.9</strong>
           <div class="stars">★★★★★</div>
-          <p>"Outstanding service. My villa in Dubai Marina has never looked this clean. The team arrived on time, were very professional, and paid attention to every detail."</p>
+          <span>Based on 340+ reviews</span>
+        </div>
+        <div class="reviews-tags">
+          <span>Punctual</span>
+          <span>Professional</span>
+          <span>Great Value</span>
+          <span>Spotless Results</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <blockquote class="review-card">
+          <div class="review-header">
+            <div class="stars">★★★★★</div>
+            <span class="review-date">2 weeks ago</span>
+          </div>
+          <p>"Booked a deep clean for our 3-bedroom villa in Dubai Marina before Eid. The team was on time, brought all their own supplies, and the kitchen and bathrooms looked brand new. Will definitely book again."</p>
           <footer>
             <div class="avatar">FA</div>
             <div>
-              <cite>Fatima Al-Mansouri</cite>
-              <span>Villa Owner, Dubai Marina</span>
+              <cite>Fatima A.</cite>
+              <span>Villa · Dubai Marina</span>
             </div>
           </footer>
         </blockquote>
-        <blockquote class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"We have been using SparkleClean for our Abu Dhabi office for six months. Consistent quality, clear communication, and our team always walks into a fresh workspace."</p>
+        <blockquote class="review-card">
+          <div class="review-header">
+            <div class="stars">★★★★★</div>
+            <span class="review-date">1 month ago</span>
+          </div>
+          <p>"We use SparkleClean for our 12-person office in Business Bay every week. Always consistent, always professional. They work after 7 PM so we never have to worry about disruption."</p>
           <footer>
-            <div class="avatar">KA</div>
+            <div class="avatar">MR</div>
             <div>
-              <cite>Khalid Al-Rashid</cite>
-              <span>Office Manager, Abu Dhabi</span>
+              <cite>Marcus R.</cite>
+              <span>Office Manager · Business Bay</span>
             </div>
           </footer>
         </blockquote>
-        <blockquote class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p>"Booked a deep clean before moving into our new apartment in Downtown Dubai. They cleaned areas I had not even thought of. Excellent value — highly recommended."</p>
+        <blockquote class="review-card">
+          <div class="review-header">
+            <div class="stars">★★★★★</div>
+            <span class="review-date">3 weeks ago</span>
+          </div>
+          <p>"Got a quote on WhatsApp in under 30 minutes. Move-out clean for our apartment in JLT — landlord was impressed and we got our full deposit back. Worth every dirham."</p>
           <footer>
-            <div class="avatar">NP</div>
+            <div class="avatar">SP</div>
             <div>
-              <cite>Noura Patel</cite>
-              <span>Apartment Owner, Downtown Dubai</span>
+              <cite>Sara P.</cite>
+              <span>Apartment · JLT, Dubai</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="review-card">
+          <div class="review-header">
+            <div class="stars">★★★★★</div>
+            <span class="review-date">1 week ago</span>
+          </div>
+          <p>"As a working mum, having a reliable weekly cleaner is everything. SparkleClean has been coming to our Al Reem Island apartment for 4 months — trustworthy team and spotless every time."</p>
+          <footer>
+            <div class="avatar">LH</div>
+            <div>
+              <cite>Layla H.</cite>
+              <span>Apartment · Abu Dhabi</span>
             </div>
           </footer>
         </blockquote>
@@ -190,25 +341,26 @@
     </div>
   </section>
 
-  <!-- WhatsApp CTA -->
+  <!-- CTA #3 -->
   <section class="cta" id="contact">
     <div class="container cta-content">
       <div class="cta-text">
-        <h2>Ready for a spotless space?</h2>
-        <p>Get a free quote in minutes. Message us on WhatsApp and we will respond within the hour.</p>
+        <span class="cta-urgency">🔥 Only a few slots left this week</span>
+        <h2>Get Your Free Quote in Under 1 Hour</h2>
+        <p>Send us a WhatsApp message with your location and property size. No commitment, no payment — just a clear price and available dates.</p>
+        <ul class="cta-perks">
+          <li>✓ Free, no-obligation quote</li>
+          <li>✓ Same-day & next-day booking</li>
+          <li>✓ Satisfaction guaranteed</li>
+        </ul>
       </div>
-      <a
-        href="https://wa.me/212708053592"
-        data-whatsapp
-        class="btn btn-whatsapp"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-        </svg>
-        Chat on WhatsApp
-      </a>
+      <div class="cta-action">
+        <a href="https://wa.me/212708053592" data-whatsapp class="btn btn-whatsapp btn-xl" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp — It's Free
+        </a>
+        <p class="cta-phone">Or call us: <a href="tel:+212708053592">0708053592</a></p>
+      </div>
     </div>
   </section>
 
@@ -220,40 +372,46 @@
           <span class="logo-icon">✦</span>
           SparkleClean
         </a>
-        <p>Professional cleaning services you can trust across the UAE.</p>
+        <p>Professional cleaning services for homes and offices across the UAE. Licensed, insured, and committed to your satisfaction.</p>
+        <div class="footer-hours">
+          <strong>Working Hours</strong>
+          <span>Mon – Sat: 8:00 AM – 8:00 PM</span>
+          <span>WhatsApp: Available 7 days a week</span>
+        </div>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#services">Services & Prices</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#contact" data-whatsapp>Get Free Quote</a></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Contact</h4>
+        <h4>Contact Us</h4>
         <p><a href="mailto:mohabenaissaai156@gmail.com">mohabenaissaai156@gmail.com</a></p>
         <p><a href="tel:+212708053592">0708053592</a></p>
+        <p class="footer-areas">Serving Dubai · Abu Dhabi · Sharjah</p>
       </div>
     </div>
     <div class="footer-bottom container">
-      <p>&copy; 2026 SparkleClean. All rights reserved.</p>
+      <p>&copy; 2026 SparkleClean UAE. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a
-    href="https://wa.me/212708053592"
-    data-whatsapp
-    class="whatsapp-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Chat on WhatsApp"
-  >
-    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-    </svg>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/212708053592" data-whatsapp class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
+
+  <!-- Mobile Sticky WhatsApp Bar -->
+  <div class="mobile-cta-bar" id="mobileCtaBar">
+    <a href="#contact" data-whatsapp class="mobile-cta-btn">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Get Free Quote on WhatsApp
+    </a>
+  </div>
 
   <script src="./script.js"></script>
 </body>
