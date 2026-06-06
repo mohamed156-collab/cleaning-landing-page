@@ -50,6 +50,7 @@ body.has-mobile-cta {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -398,7 +399,9 @@ ul {
 .hero-img {
   width: 100%;
   height: clamp(320px, 42vw, 480px);
+  max-height: 480px;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -671,11 +674,14 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 0.4s ease;
 }
 
-.service-card:hover .service-image img {
-  transform: scale(1.04);
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover .service-image img {
+    transform: scale(1.04);
+  }
 }
 
 .service-body {
@@ -1251,12 +1257,85 @@ ul {
   }
 
   .hero {
-    padding: 2.5rem 0 3rem;
+    padding: 2rem 0 2.5rem;
+  }
+
+  .hero-content {
+    gap: 1.75rem;
+  }
+
+  .hero-visual {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-image-wrap {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    aspect-ratio: 4 / 3;
+    flex-shrink: 0;
+  }
+
+  .hero-card-overlay {
+    position: static;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    border-top: 1px solid var(--color-border);
+    padding: 1.25rem;
+    box-shadow: none;
+  }
+
+  .hero-card-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-card-overlay p {
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-card-price strong {
+    font-size: 1.5rem;
   }
 
   .hero-stats {
     gap: 1.5rem;
     flex-wrap: wrap;
+  }
+
+  .services {
+    padding: 3.5rem 0;
+  }
+
+  .services-grid {
+    gap: 1rem;
+  }
+
+  .service-image {
+    width: 100%;
+    height: clamp(176px, 52vw, 240px);
+    aspect-ratio: auto;
+  }
+
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+  }
+
+  .service-body {
+    padding: 1.25rem 1.5rem 1.5rem;
   }
 
   .speed-inner {
@@ -1302,6 +1381,10 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
   .hero-actions {
     flex-direction: column;
     width: 100%;
@@ -1315,20 +1398,51 @@ ul {
     justify-content: center;
   }
 
-  .hero-image-wrap {
-    max-width: 100%;
+  .hero-img {
+    aspect-ratio: 3 / 2;
   }
 
   .hero-card-overlay {
-    margin: 0.75rem;
-    padding: 1.15rem;
+    padding: 1rem;
   }
 
-  .service-body {
-    padding: 1.25rem 1.5rem 1.5rem;
+  .hero-card-top {
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-trust-pills {
+    gap: 0.4rem;
+  }
+
+  .hero-trust-pills span {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
   }
 
   .service-image {
-    height: 180px;
+    height: clamp(168px, 50vw, 200px);
+  }
+
+  .service-body {
+    padding: 1.1rem 1.15rem 1.25rem;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .service-image {
+    height: clamp(160px, 48vw, 188px);
+  }
+
+  .hero-card-overlay .btn {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
   }
 }
